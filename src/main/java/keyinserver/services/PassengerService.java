@@ -11,7 +11,7 @@ import java.util.List;
 
 @Service
 public class PassengerService {
-    private final List<Passenger> passengers = new ArrayList<>();
+    private List<Passenger> passengers = new ArrayList<>();
 
     // Initialize some data
     public PassengerService(CityService cityService) {
@@ -35,5 +35,11 @@ public class PassengerService {
     // Method to find a passenger by ID
     public Passenger findPassengerById(int id) {
         return passengers.stream().filter(p -> p.getId() == id).findFirst().orElse(null);
+    }
+
+    // Method to get all aircraft a passenger has traveled on
+    public List<Aircraft> getAircraftForPassenger(int passengerId) {
+        Passenger passenger = findPassengerById(passengerId);
+        return passenger != null ? passenger.getAircrafts() : null;
     }
 }

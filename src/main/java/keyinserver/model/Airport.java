@@ -1,12 +1,19 @@
 package keyinserver.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+
 import java.util.List;
 
+@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 public class Airport {
     private int id;
     private String name;
     private String code;
     private City city;
+
     private List<Aircraft> aircrafts;
 
     public Airport(int id, String name, String code, City city, List<Aircraft> aircrafts) {

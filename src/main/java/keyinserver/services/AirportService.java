@@ -12,7 +12,7 @@ import java.util.List;
 
 @Service
 public class AirportService {
-    private final List<Airport> airports = new ArrayList<>();
+    private List<Airport> airports = new ArrayList<>();
 
     // Initialize some data
     public AirportService(CityService cityService) {
@@ -40,5 +40,23 @@ public class AirportService {
     // Method to find an airport by ID
     public Airport findAirportById(int id) {
         return airports.stream().filter(a -> a.getId() == id).findFirst().orElse(null);
+    }
+
+    // Method to get airports used by a passenger
+    public List<Airport> getAirportsUsedByPassenger(PassengerService passengerService, int passengerId) {
+        List<Aircraft> aircrafts = passengerService.getAircraftForPassenger(passengerId);
+        List<Airport> result = new ArrayList<>();
+        if (aircrafts != null) {
+            for (Aircraft aircraft : aircrafts) {
+                result.addAll(aircraft.getAirports());
+            }
+        }
+        return result;
+    }
+
+    // Method to get airports for a given aircraft
+    public List<Airport> getAirportsForAircraft(int aircraftId, AircraftService aircraftService) {
+        Aircraft aircraft = aircraftService.findAircraftById(aircraftId);
+        return aircraft != null ? aircraft.getAirports() : null;
     }
 }

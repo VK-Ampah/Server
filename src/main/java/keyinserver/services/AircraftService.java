@@ -11,7 +11,7 @@ import java.util.List;
 
 @Service
 public class AircraftService {
-    private final List<Aircraft> aircrafts = new ArrayList<>();
+    private List<Aircraft> aircrafts = new ArrayList<>();
 
     // Initialize some data
     public AircraftService(PassengerService passengerService, AirportService airportService) {
@@ -54,4 +54,3 @@ public class AircraftService {
         return aircrafts.stream().filter(a -> a.getId() == id).findFirst().orElse(null);
     }
 }
-

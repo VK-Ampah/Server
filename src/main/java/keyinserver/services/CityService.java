@@ -1,15 +1,14 @@
 package keyinserver.services;
 
+import keyinserver.model.Airport;
 import keyinserver.model.City;
 import org.springframework.stereotype.Service;
 import java.util.ArrayList;
-
-
-import java.util.ArrayList;
 import java.util.List;
+
 @Service
 public class CityService {
-    private final List<City> cities = new ArrayList<>();
+    private List<City> cities = new ArrayList<>();
 
     // Initialize some data
     public CityService() {
@@ -32,5 +31,11 @@ public class CityService {
     // Method to find a city by ID
     public City findCityById(int id) {
         return cities.stream().filter(c -> c.getId() == id).findFirst().orElse(null);
+    }
+
+    // Method to get airports in a city
+    public List<Airport> getAirportsInCity(int cityId) {
+        City city = findCityById(cityId);
+        return city != null ? city.getAirports() : null;
     }
 }
