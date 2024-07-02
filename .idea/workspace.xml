@@ -5,16 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="879c6e7e-2219-45da-9146-4ffbf38cecd9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/keyinserver/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/keyinserver/model/AircraftTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/keyinserver/model/AirportTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/keyinserver/model/CityTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/keyinserver/model/PassengerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/keyinserver/services/AircraftServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/keyinserver/services/AirportServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/keyinserver/services/CityServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/keyinserver/services/PassengerServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/keyinserver/model/Aircraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/keyinserver/model/Aircraft.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/keyinserver/model/Airport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/keyinserver/model/Airport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/keyinserver/model/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/keyinserver/model/City.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/keyinserver/model/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/keyinserver/model/Passenger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/keyinserver/services/AircraftService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/keyinserver/services/AircraftService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/keyinserver/services/AirportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/keyinserver/services/AirportService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/keyinserver/services/CityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/keyinserver/services/CityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/keyinserver/services/PassengerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/keyinserver/services/PassengerService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +35,9 @@
   "associatedIndex": 2
 }]]></component>
   <component name="ProjectId" id="2ieIJZHuPwMur0eVNGT49LgUfuh" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -43,27 +45,100 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Server.executor": "Run",
+    "JUnit.AircraftTest.testAircraftGettersAndSetters.executor": "Run",
+    "JUnit.AirportTest.testAirportGettersAndSetters.executor": "Run",
+    "JUnit.CityServiceTest.executor": "Run",
+    "JUnit.CityTest.testCityGettersAndSetters.executor": "Run",
+    "JUnit.PassengerServiceTest.executor": "Run",
+    "JUnit.PassengerTest.testPassengerGettersAndSetters.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="keyinserver.Server" />
+  <component name="RunManager" selected="JUnit.AircraftServiceTest">
+    <configuration name="AircraftServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Server" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="keyinserver.*" />
+          <option name="PATTERN" value="keyinserver.services.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="keyinserver.services" />
+      <option name="MAIN_CLASS_NAME" value="keyinserver.services.AircraftServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AircraftTest.testAircraftGettersAndSetters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="keyinserver.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="keyinserver.model" />
+      <option name="MAIN_CLASS_NAME" value="keyinserver.model.AircraftTest" />
+      <option name="METHOD_NAME" value="testAircraftGettersAndSetters" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AirportServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="keyinserver.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="keyinserver.services" />
+      <option name="MAIN_CLASS_NAME" value="keyinserver.services.AirportServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CityServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="keyinserver.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="keyinserver.services" />
+      <option name="MAIN_CLASS_NAME" value="keyinserver.services.CityServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PassengerServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="keyinserver.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="keyinserver.services" />
+      <option name="MAIN_CLASS_NAME" value="keyinserver.services.PassengerServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Server" />
+        <item itemvalue="JUnit.AircraftServiceTest" />
+        <item itemvalue="JUnit.AirportServiceTest" />
+        <item itemvalue="JUnit.PassengerServiceTest" />
+        <item itemvalue="JUnit.CityServiceTest" />
+        <item itemvalue="JUnit.AircraftTest.testAircraftGettersAndSetters" />
       </list>
     </recent_temporary>
   </component>
