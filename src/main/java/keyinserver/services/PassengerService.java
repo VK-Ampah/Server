@@ -3,7 +3,6 @@ package keyinserver.services;
 
 import keyinserver.model.Aircraft;
 import keyinserver.model.City;
-import keyinserver.model.Airport;
 import keyinserver.model.Passenger;
 import org.springframework.stereotype.Service;
 import java.util.ArrayList;
